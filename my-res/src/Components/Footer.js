@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../Images/logo1.png'
+import logo from '../Images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faMap} from '@fortawesome/free-solid-svg-icons'
 
