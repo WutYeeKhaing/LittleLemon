@@ -60,7 +60,7 @@ const BookingForm = (props) => {
                             </label>
                         </div>
                         <div className='btn-receive'>
-                            <input aria-label='On Click' type='submit' vlaue={'Make Your Reservation'} />
+                            <input aria-label='On Click' type={'submit'} vlaue={'Make Your Reservation'} />
                         </div>
                     </fieldset>
                 </form>
