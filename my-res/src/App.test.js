@@ -30,13 +30,14 @@ test('Submitting the form with valid data', () => {
   const emailInput = screen.getByLabelText('Email');
   const dateInput = screen.getByLabelText('Date');
   const timeInput = screen.getByLabelText('Time');
+  const placeInput = screen.getByLabelText('book-place');
   const submitButton = screen.getByRole('button', { name: 'Submit' });
   
   fireEvent.change(nameInput, { target: { value: 'John Doe' } });
   fireEvent.change(emailInput, { target: { value: 'john@example.com' } });
-  fireEvent.change(dateInput, { target: { value: '2024-02-21' } });
-  fireEvent.change(timeInput, { target: { value: '12:00 PM' } });
-  
+  fireEvent.change(dateInput, { target: { value: '2024-02-23' } });
+  fireEvent.change(timeInput, { target: { value: '1:00 PM' } });
+  fireEvent.change(placeInput, { target: { value: 'Indoor' } });
   // Submit the form
   fireEvent.click(submitButton);
   
@@ -65,7 +66,6 @@ test('Initialize/Update Times', () => {
   const testTime = []
    userEvent.selectOptions(screen.getByLabelText("Choose Time"),screen.getByRole('option', { name: testTime}))
    expect(screen.getByRole('option', { name: testTime}).selected).toBe(true);
-
 
 })
 });

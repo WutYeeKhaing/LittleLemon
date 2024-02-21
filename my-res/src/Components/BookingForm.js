@@ -39,7 +39,7 @@ const BookingForm = (props) => {
                         </div>
                         <div>
                             <label htmlFor='book-guest'>Number Of Guests:</label>
-                            <input id='book-guest'  min='1' value={guests} onChange={(e)=>{setGuests(e.target.value)}}/>
+                            <input id='book-guest'  min='1' value={guests} onChange={(e)=>{setGuests(e.target.value)}} required/>
                         </div>
                         <div>
                             <label htmlFor='book-occasion'>  Occasion: </label>
